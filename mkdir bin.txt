@@ -1,0 +1,56 @@
+mkdir bin
+cd
+export NXF_EDGE=1
+nextflow self-update
+
+      N E X T F L O W
+      version 23.01.0-edge build 5834
+      created 14-01-2023 17:31 UTC (23:01 IDT)
+      cite doi:10.1038/nbt.3820
+      http://nextflow.io
+
+
+Nextflow installation completed. Please note:
+- the executable file `nextflow` has been created in the folder: /home/sejyotiarna/bin
+
+export NXF_EDGE=0
+nextflow self-update --version
+
+      N E X T F L O W
+      version 22.10.7 build 5853
+      created 18-02-2023 20:32 UTC (19-02-2023 02:02 IDT)
+      cite doi:10.1038/nbt.3820
+      http://nextflow.io
+
+
+Nextflow installation completed. Please note:
+- the executable file `nextflow` has been created in the folder: /home/sejyotiarna/bin
+
+nano tutorial.nf
+
+#!/usr/bin/env nextflow
+
+params.str = 'Hello world!'
+
+process splitLetters {
+  output:
+  stdout split_letters.into
+
+  """
+  echo '${params.str}' | fold -w1
+  """
+}
+
+process convertToUpper {
+  input:
+  file input_file from split_letters
+
+  output:
+  stdout result
+
+  """
+  cat ${input_file} | tr '[:lower:]' '[:upper:]'
+  """
+}
+
+nextflow run tutorial.nf
