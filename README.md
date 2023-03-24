@@ -72,10 +72,15 @@ To use this pipeline, you will need to have Nextflow and Docker installed on you
 
 To run the RNA-seq pipeline using this Nextflow script, you can use the following command:
 
-attached file in the repository
+nextflow run nf-core/rnaseq \
+    --reads /path/to/reads \
+    --outdir /path/to/output \
+    -profile docker
 
 
 This command will run the pipeline using the `docker` profile, which will automatically download and use the Docker container that contains all of the required software and dependencies.
+
+For more information on how to run the pipeline, please refer to the nf-core/rnaseq documentation.
 
 ## Output
 
@@ -97,5 +102,4 @@ The nf-core community has developed badges that can be added to the README files
 The `nf-core/rnaseq` badge indicates that this pipeline is an nf-core RNA-seq pipeline. The `GitHub Actions CI Status` badge indicates the status of the continuous integration (CI) tests for this pipeline.
 
 For more information about nf-core, please visit the [nf-core website](https://nf-co.re/).
-
 
