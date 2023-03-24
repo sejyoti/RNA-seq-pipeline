@@ -47,3 +47,30 @@ To use this pipeline, you will need to have Nextflow and Docker installed on you
 
 To run the RNA-seq pipeline using this Nextflow script, you can use the following command:
 
+attached file in the repository
+
+
+This command will run the pipeline using the `docker` profile, which will automatically download and use the Docker container that contains all of the required software and dependencies.
+
+## Output
+
+The RNA-seq pipeline will generate the following output files:
+
+- Gene-level counts (`counts/counts.genes.txt`)
+- Transcript-level counts (`counts/counts.transcripts.txt`)
+- Alignment statistics (`results/logs/star_alignment.log`)
+
+## nf-core badges
+
+This pipeline is built using nf-core, which is a framework for building reusable, modular and scalable bioinformatics workflows. nf-core pipelines adhere to a set of community-driven guidelines to ensure reproducibility and usability.
+
+The nf-core community has developed badges that can be added to the README files of pipelines that follow these guidelines. These badges show that the pipeline has passed automated testing, and indicate the quality and stability of the pipeline.
+
+[![nf-core](https://img.shields.io/badge/nf--core-rnaseq-brightgreen.svg)](https://nf-co.re/rnaseq)
+[![GitHub Actions CI Status](https://github.com/nf-core/rnaseq/workflows/nf-core%20CI/badge.svg)](https://github.com/nf-core/rnaseq/actions)
+
+The `nf-core/rnaseq` badge indicates that this pipeline is an nf-core RNA-seq pipeline. The `GitHub Actions CI Status` badge indicates the status of the continuous integration (CI) tests for this pipeline.
+
+For more information about nf-core, please visit the [nf-core website](https://nf-co.re/).
+
+
