@@ -4,6 +4,18 @@ RNA-seq pipeline for a specific FastQ file, using a Docker profile
 
 # nf-core/rnaseq
 
+<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>
+<img src="https://img.icons8.com/color/48/000000/docker.png"/>
+<img src="https://www.nextflow.io/img/nextflow_logo_color.svg" height="48" alt="Nextflow">
+
+
+
+
+
+
+<img src="https://raw.githubusercontent.com/nf-core/media/master/nf-core-logos/nf-core-rnaseq/nf-core-rnaseq_logo.png" height="48" alt="nf-core RNA-seq">
+
+
 [![GitHub Workflow Status (Lint) for nf-core/rnaseq](https://img.shields.io/github/workflow/status/nf-core/rnaseq/Lint?label=Lint&logo=github&style=flat-square)](https://github.com/nf-core/rnaseq/actions/workflows/lint.yml)
 [![GitHub Workflow Status (Test) for nf-core/rnaseq](https://img.shields.io/github/workflow/status/nf-core/rnaseq/Test?label=Test&logo=github&style=flat-square)](https://github.com/nf-core/rnaseq/actions/workflows/test.yml)
 [![GitHub Workflow Status (Build) for nf-core/rnaseq](https://img.shields.io/github/workflow/status/nf-core/rnaseq/Build?label=Build&logo=github&style=flat-square)](https://github.com/nf-core/rnaseq/actions/workflows/build.yml)
